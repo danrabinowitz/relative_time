@@ -6,7 +6,17 @@ describe RelativeTime::TimeOfDay do
   let(:second) { 12.345 }
   let(:time_of_day) { RelativeTime::TimeOfDay.new(hour: hour, minute: minute, second: second) }
 
-  it "accepts an hour, minute, and second" do
-    expect(time_of_day).to be_a(RelativeTime::TimeOfDay)
+  describe ".new" do
+    it "accepts an hour, minute, and second" do
+      expect(time_of_day).to be_a(RelativeTime::TimeOfDay)
+    end
+
+    describe "hour is not an integer" do
+      let(:hour) { 13.5 }
+
+      it "raises an exception" do
+        expect{time_of_day}.to raise_error(TypeError)
+      end
+    end
   end
 end
