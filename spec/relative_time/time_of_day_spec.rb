@@ -18,5 +18,22 @@ describe RelativeTime::TimeOfDay do
         expect{time_of_day}.to raise_error(TypeError)
       end
     end
+
+    describe "minute is not an integer" do
+      let(:minute) { 13.5 }
+
+      it "raises an exception" do
+        expect{time_of_day}.to raise_error(TypeError)
+      end
+    end
+
+    describe "second is negative" do
+      let(:second) { -5 }
+
+      it "raises an exception" do
+        expect{time_of_day}.to raise_error(TypeError)
+      end
+    end
+
   end
 end
