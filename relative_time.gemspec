@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "relative_time"
   spec.version       = RelativeTime::VERSION
   spec.authors       = ["Dan Rabinowitz"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.email         = ["djr@DanielRabinowitz.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A class for representing relative times}
+  # spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.homepage      = "https://github.com/danrabinowitz/relative_time"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
