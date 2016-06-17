@@ -1,5 +1,2 @@
 require "relative_time/version"
-
-module RelativeTime
-  # Your code goes here...
-end
+require "relative_time/weekly"
